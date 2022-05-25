@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  		<parameter name="browsername" value="ch"/>
+  		<parameter name="username" value="admin"/>
+  		<parameter name="password" value="manager"/>
+    <classes>
+      <class name="org.testngEx3.ParametersEx1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

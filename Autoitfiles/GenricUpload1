@@ -1,0 +1,13 @@
+;wait for 10 sec for genric upload
+Local $winId=WinWait("[CLASS:#32770]","",10)
+
+;set focus on file name
+ControlFocus($winId,"","Edit1")
+
+;wit foe 2sec
+Sleep(2000)
+
+;Set file path
+ControlSetText($winId,"","Edit1","D:\Accelration\New\jan_9_Selenium\Autoitfiles\"&$CmdLine[1])
+
+Controllick($winId,"","Button1")
